@@ -13,9 +13,9 @@
     <fieldset>
       <legend>User Form</legend>
       <label for="username">Username</label>
-      <input type="text" name="username" size="30" maxlength="12" placeholder="Username" required/>
+      <input type="text" name="username" size="30" maxlength="12" placeholder="Username" required placeholder="[A-Z][a-zA-Z][^#&<>\"~;$^%{}?]{1,20}$"
       <label for="password">Password</label>
-      <input type="password" name="password" size="30" maxlength="8" placeholder="Password" />
+      <input type="password" name="password" size="30" maxlength="8" placeholder="Password" required placeholder="(09)([0-4]|[6-9]){1}[0-9]{7}|(016)[2-9]{1}[0-9]{7}|(012)[0-9]{1}[0-9]{7}|(018)(6|8)[0-9]{7}|(0199)[0-9]{7}">
       <label for="superheros">Select your favourite superheros</label>
       <input type="radio" name="superheros" value="Superman"/> Superman
       <input type="radio" name="superheros" value="Batman" checked="checked" /> Batman
@@ -26,10 +26,43 @@
       <label for="videogame">Select your favourite video game</label>
       <input type="checkbox" name="videogame" value="Fifa"/> Fifa
       <input type="checkbox" name="videogame" value="NHL"/> NHL
-      <input type="checkbox" name="videogame" value="Resident Evil"/> Resident Evil 
+      <input type="checkbox" name="videogame" value="Resident Evil"/> Resident Evil
       <input type="checkbox" name="videogame" value="Uncharted"/> Uncharted
       <input type="hidden" name="userid" value="2300"/>
+      <p><label for="birthday">Select your Birth of Date</label>
+        <input type="date" name="birthday" />
+      </p>
+      <p><form>
+        <lable for="email">email</lable>
+        <input type="email" name="email" required placeholder="Enter a valid email address">
+      </form>
+    </p>
+    <p>
+        <br>
+    </p>
+
+    <p><form>
+        <lable for="personalsite">URL</lable>
+        <input type="url" name="personalsite" />
+      </form></p>
+      <form>
+          <input type="submit" value="Submit form">
+        </form>
     </fieldset>
   </form>
+  <p>
+    <form action="https://www.google.ca/search" method="get" enctype="https://www.google.ca/search?q=YOUR_SEARCH_VALUE" >
+      
+    
+        <label for="site-search">q:</label>
+<input type="search" id="site-search" name="q"
+       aria-label="Search through site content">
+
+<button>Search</button>
+    </form>
+    </p>
+
+    
+        
 </body>
 </html>
